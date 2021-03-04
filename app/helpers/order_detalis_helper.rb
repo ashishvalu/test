@@ -1,0 +1,2 @@
+module OrderDetalisHelper
+end

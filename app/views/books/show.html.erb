@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @book.name %>
+</p>
+<div style="width:400px; height:auto">
+ <%= image_tag(@book.image,style:"width:100") %>
+</div>
+<p>
+  <strong>Price:</strong>
+  <%= @book.price %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @book.publisher_id %>
+</p>
+
+<p>
+  <strong>Categary:</strong>
+  <%= @book.categary_id %>
+</p>
+
+<p>
+  <strong>Isbn10:</strong>
+  <%= @book.isbn10 %>
+</p>
+
+<p>
+  <strong>Isbn13:</strong>
+  <%= @book.isbn13 %>
+</p>
+
+<p>
+  <strong>Language:</strong>
+  <%= @book.language %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book) %> |
+<%= link_to 'Back', books_path %>
